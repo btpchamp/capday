@@ -1,6 +1,7 @@
 //Way 1
 module.exports = (helloworld) => {
-    helloworld.on('addition', ({data:{input1,input2}}) => input1+input2)
+    helloworld.on('addition', ({data:{input1,input2}}) => input1*input2)
+    console.log("This is my personal change for testing")
 }
 
 
