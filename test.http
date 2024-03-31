@@ -1,0 +1,1 @@
+GET http://localhost:4004/odata/v4/helloworld/addition(input1=10,input2=30)
