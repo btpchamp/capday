@@ -4,4 +4,12 @@
 #GET http://localhost:4004/odata/v4/productshop/Supplier
 
 
-GET http://localhost:4004/odata/v4/productshop/Product
+#GET http://localhost:4004/odata/v4/productshop/Product
+
+
+PATCH http://localhost:4004/odata/v4/productshop/Product('1')
+Content-Type: application/json
+
+{
+      "stock": 90
+}
