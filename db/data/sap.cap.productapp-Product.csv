@@ -1,3 +1,3 @@
-ID,name,stock,price
-1,Audi,23,23433
-2,Mercedez,45,4332121
+ID,name,stock,cost_price,cost_discount,mfgDate,expDate
+1,Audi,23,332132,45,20230405,20300402
+2,Mercedez,54,54425,76,20220322,20400311
