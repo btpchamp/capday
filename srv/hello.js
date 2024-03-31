@@ -3,6 +3,7 @@ module.exports = (helloworld) => {
     helloworld.on('addition', ({data:{input1,input2}}) => input1*input2)
     console.log("This is my personal change for testing")
     console.log("this is manual changes from github")
+    console.log("this changes is from cap")
 }
 
 
