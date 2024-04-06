@@ -1,32 +1,22 @@
-#GET http://localhost:4004/odata/v4/helloworld/addition(input1=10,input2=30)
+
+#GET http://localhost:4004/rest/productshop/MyFunction(name='BMW')
 
 
-#GET http://localhost:4004/odata/v4/productshop/Supplier
+#POST http://localhost:4004/odata/v4/productshop/Supplier
+#Content-Type: application/json
+
 
 
 #GET http://localhost:4004/odata/v4/productshop/Product
-
-
-PATCH http://localhost:4004/odata/v4/productshop/Product('1')
-Content-Type: application/json
-
-{
-      "stock": 90
-}
 
 POST http://localhost:4004/odata/v4/productshop/Product
 Content-Type: application/json
 
 {
-  "mfgDate": "20230405",
-  "expDate": "20300402",
-  "createdAt": "2024-03-31T10:16:17.208Z",
-  "createdBy": "anonymous",
-  "modifiedAt": "2024-03-31T10:25:57.690Z",
-  "modifiedBy": "anonymous",
-  "ID": "3",
-  "name": "Audi",
-  "stock": 90,
-  "cost_price": 332132,
-  "cost_discount": 45
+  "name": "MG Hector",
+  "stock": 60
 }
+
+
+
+

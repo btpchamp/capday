@@ -1,0 +1,9 @@
+
+
+POST http://localhost:4004/odata/v4/productshop/orderProduct
+Content-Type: application/json
+
+{
+  "name": "Audi",
+  "stock": 60
+}
