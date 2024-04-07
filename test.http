@@ -5,17 +5,27 @@
 #POST http://localhost:4004/odata/v4/productshop/Supplier
 #Content-Type: application/json
 
+#POST http://localhost:4004/odata/v4/productshop/Product
+#Content-Type: application/json
+
+#{
+#  "name": "Hero",
+#  "stock": 59
+#}
 
 
 #GET http://localhost:4004/odata/v4/productshop/Product
 
-POST http://localhost:4004/odata/v4/productshop/Product
+
+POST http://localhost:4004/odata/v4/productshop/Product(ID=d7416b98-f6f2-42c7-81cb-4e57045692dc,IsActiveEntity=false)/productshop.draftActivate
 Content-Type: application/json
 
-{
-  "name": "MG Hector",
-  "stock": 60
-}
+
+
+
+
+
+
 
 
 

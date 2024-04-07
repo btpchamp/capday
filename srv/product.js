@@ -1,4 +1,5 @@
 const cds = require('@sap/cds');
+const { requestPasswordUserToken } = require('@sap/xssec/lib/requests');
 module.exports = cds.service.impl(async function(srv) {
 
     const { Product } = srv.entities;
@@ -26,6 +27,7 @@ module.exports = cds.service.impl(async function(srv) {
            let netStock =  result[0].stock - req.data.stock
            const updateStock = await UPDATE(Product).with({stock:netStock}).where ({name:req.data.name})
             console.log(`Order Placed aand remaining stock left ${netStock}`)
+            return req.notify(`Order placed. Stock left ${updateStock}`)
     })
 
 

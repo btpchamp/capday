@@ -1,4 +1,4 @@
-ID,name,stock,cost_price,cost_discount,emission,mfgDate,expDate,supplier_ID
-94b1d9d6-96db-43bf-a5db-d05c8094da9c,Audi,23,332132,45,20230405,20300402,2500,1
-9be26dd4-2424-47aa-bcdb-ad51ab3d1315,Mercedez,54,54425,76,20220322,20400311,4500,2
-5be26dd4-2424-47aa-bcdb-ad51ab3d1314,BMW,54,54425,76,20220322,20400311,1300,1
+ID,name,stock,cost_price,cost_discount,emission,mfgDate,expDate,criticality,supplier_ID
+94b1d9d6-96db-43bf-a5db-d05c8094da9c,Audi,23,332132,45,10,20300402,20220402,1,1
+9be26dd4-2424-47aa-bcdb-ad51ab3d1315,Mercedez,54,54425,76,20,20400311,20230105,2,2
+5be26dd4-2424-47aa-bcdb-ad51ab3d1314,BMW,54,54425,76,15,20400311,20250108,3,1

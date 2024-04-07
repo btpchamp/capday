@@ -25,7 +25,14 @@ entity Product : cuid, managed, addtionalInfo
     stock : Integer;
     cost : PriceDetails;
     emission : Integer;
+    criticality: Integer;
     supplier : Association to  Supplier;
+    converstion: Composition of many {
+        key ID : UUID;
+        timestamp: String;
+        author: String;
+        message: String;
+    }
 }
 
 entity Supplier

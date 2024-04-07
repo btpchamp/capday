@@ -5,6 +5,8 @@ service productshop {
   @odata.draft.enabled
   entity Product as projection on my.Product actions {
     action orderProduct(name: String @title: 'Product Name', stock: Integer @title: 'Quantity');
+    action createPO(name: String @title: 'Product Name');
+    action authetication(user: String @title: 'User Name');
   };
 
   @readonly
@@ -18,6 +20,8 @@ service productshop {
   @open
   type object {};
   function MyFunction(name:String) returns object; 
+
+  annotate productshop.Product with @(requires: 'productadmin')
   
 
 }
